@@ -6,7 +6,7 @@ LABEL maintainer="IEEE ieee@pec.edu.in"
 LABEL version="1.0"
 LABEL description="Backend API for the ieee hackathon"
 
-ARG JAR_FILE=target/backend-1.0.1.jar
+ARG JAR_FILE=target/demo-0.0.1-SNAPSHOT.jar
 
 ADD ${JAR_FILE} app.jar
 
