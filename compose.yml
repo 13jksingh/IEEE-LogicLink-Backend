@@ -1,0 +1,15 @@
+services:
+  postgres-database:
+    image: 'postgres:latest'
+    container_name: postgres-database-ieee
+    environment:
+      - 'POSTGRES_DB=ieee'
+      - 'POSTGRES_PASSWORD=ieeeheads'
+      - 'POSTGRES_USER=ieeesecy'
+    ports:
+      - '5432:5432'
+    volumes:
+      - db-data:/var/lib/backup/data
+
+volumes:
+  db-data:
